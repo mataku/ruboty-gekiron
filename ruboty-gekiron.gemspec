@@ -1,11 +1,10 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-# require 'ruboty/gekiron/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "ruboty-gekiron"
-  # spec.version       = Ruboty::Gekiron::VERSION
+  spec.version       = '0.0.1'
   spec.authors       = ["Takuma Homma"]
   spec.email         = ["sfprhythnn@gmail.com"]
 
