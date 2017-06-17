@@ -1,4 +1,4 @@
-module Rubory
+module Ruboty
   module Handlers
     class Gekiron < Base
       on(
