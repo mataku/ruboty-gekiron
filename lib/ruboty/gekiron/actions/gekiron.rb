@@ -5,8 +5,6 @@ module Ruboty
   module Gekiron
     module Actions
       class Gekiron < Ruboty::Actions::Base
-        TOPICS = YAML.load_file('./ruboty/gekiron/config/topics.yml')
-
         def call
           message.reply(gekiron_topic)
         rescue => e
@@ -16,7 +14,8 @@ module Ruboty
         private
 
         def topic
-          TOPICS.sample
+          path = File.expand_path(ENV['TOPICS_YML'])
+          YAML.load_file(path).sample
         end
 
         def hiragana
