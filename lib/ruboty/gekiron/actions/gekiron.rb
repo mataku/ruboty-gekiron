@@ -24,7 +24,7 @@ module Ruboty
         end
 
         def gekiron_topic
-          "「#{hiragana}」から始まる#{topic}は？"
+          "「#{hiragana}」から始まる、#{topic}は？"
         end
       end
     end
