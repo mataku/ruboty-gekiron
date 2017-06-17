@@ -2,12 +2,12 @@ module Rubory
   module Handlers
     class Gekiron < Base
       on(
-        /gekiron|激論/,
-        name: 'gekiron',
+        /topic/,
+        name: 'topic',
         description: '激論しそうな話題を返します'
       )
 
-      def gekiron(message)
+      def topic(message)
         Ruboty::Gekiron::Actions::Gekiron.new(message).call
       end
     end
