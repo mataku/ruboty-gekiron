@@ -8,7 +8,7 @@ module Rubory
       )
 
       def gekiron(message)
-        message.reply('')
+        Ruboty::Gekiron::Actions::Gekiron.new(message).call
       end
     end
   end
