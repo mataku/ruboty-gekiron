@@ -18,13 +18,13 @@ module Ruboty
           YAML.load_file(path).sample
         end
 
-        def hiragana
+        def first_letter
           # 小文字, 濁音, ['を', 'ん'] を除く
           [*'ｱ'..'ﾜ'].map{ |chr| NKF.nkf('-h1w', NKF.nkf('-Xw', chr)) }.sample
         end
 
         def gekiron_topic
-          "「#{hiragana}」から始まる、#{topic}は？"
+          "「#{first_letter}」から始まる、#{topic}は？"
         end
       end
     end
