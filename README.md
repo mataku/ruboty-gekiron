@@ -12,11 +12,15 @@ gem 'ruboty-gekiron'
 
 And then execute:
 
-		$ bundle
+```
+$ bundle
+```
 
 Or install it yourself as:
 
-    $ gem install ruboty-open_esys_oruka
+```
+$ gem install ruboty-gekiron
+```
 
 Then, create topics yaml file `./config/topics.yml` in your bot code repository
 
@@ -31,5 +35,5 @@ Then, create topics yaml file `./config/topics.yml` in your bot code repository
 
 ```
 @ruboty topic
-「ふ」から始まるかわいいものは？
+「ふ」から始まる、テンションが上がるものは？
 ```
