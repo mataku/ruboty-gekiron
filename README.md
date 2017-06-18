@@ -1,5 +1,7 @@
 # Ruboty::Gekiron (激論)
 
+[![Build Status](https://travis-ci.org/rhythnn/ruboty-gekiron.svg?branch=master)](https://travis-ci.org/rhythnn/ruboty-gekiron)
+
 Roboty handler to generate conversation topic.
 
 ## Installation
