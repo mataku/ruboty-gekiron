@@ -18,6 +18,14 @@ Or install it yourself as:
 
     $ gem install ruboty-open_esys_oruka
 
+Then, create topics yaml file `./config/topics.yml` in your bot code repository
+
+```yaml
+# example
+- テンションが上がるもの
+- オシャレな言葉
+- さらりと言えたらかっこいい言葉
+```
 
 ## Usage
 
