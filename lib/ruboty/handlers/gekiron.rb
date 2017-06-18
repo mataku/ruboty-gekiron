@@ -2,7 +2,7 @@ module Ruboty
   module Handlers
     class Gekiron < Base
       on(
-        /topic/,
+        /topic|gekiron|激論/,
         name: 'topic',
         description: '激論しそうな話題を返します'
       )

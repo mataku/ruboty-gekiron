@@ -22,7 +22,7 @@ Or install it yourself as:
 $ gem install ruboty-gekiron
 ```
 
-Then, create topics yaml file `./config/topics.yml` in your bot code repository
+Then, create topics yaml file `./config/topics.yml` in your bot code repository (or, specify file path by `TOPICS_YAML_FILE_PATH`)
 
 ```yaml
 # example
@@ -34,6 +34,11 @@ Then, create topics yaml file `./config/topics.yml` in your bot code repository
 ## Usage
 
 ```
-@ruboty topic
+@ruboty gekiron
 「ふ」から始まる、テンションが上がるものは？
+```
+
+## ENV
+```
+TOPICS_YAML_FILE_PATH  - Topics file path (default: ./config/topics.yml)
 ```
