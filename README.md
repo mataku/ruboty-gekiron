@@ -36,6 +36,9 @@ Then, create topics yaml file `./config/topics.yml` in your bot code repository 
 ## Usage
 
 ```
+@ruboty help
+ruboty /topic|gekiron|激論/ - 激論しそうな話題を返します
+
 @ruboty gekiron
 「ふ」から始まる、テンションが上がるものは？
 ```
