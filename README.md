@@ -37,3 +37,8 @@ Then, create topics yaml file `./config/topics.yml` in your bot code repository
 @ruboty topic
 「ふ」から始まる、テンションが上がるものは？
 ```
+
+## ENV
+```
+TOPICS_YML  - Topics file path (default: ./config/topics.yml)
+```
