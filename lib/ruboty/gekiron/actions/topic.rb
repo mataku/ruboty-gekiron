@@ -14,8 +14,8 @@ module Ruboty
         private
 
         def topic
-          path = File.expand_path(ENV['TOPICS_YML'] || './config/topics.yml' )
-          YAML.load_file(path).sample
+          path = File.expand_path(ENV['TOPICS_YML'] || './config/topics.yml')
+          YAML.load_file(path).sample if File.exist?(path)
         end
 
         def first_letter
@@ -24,7 +24,11 @@ module Ruboty
         end
 
         def gekiron_topic
-          "「#{first_letter}」から始まる、#{topic}は？"
+          if topic.nil?
+            'Topic does not exist :cry: (default path: ./config/topics.yml)'
+          else
+            "「#{first_letter}」から始まる、#{topic}は？"
+          end
         end
       end
     end
