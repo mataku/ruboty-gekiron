@@ -4,7 +4,8 @@ module Ruboty
       on(
         /topic|gekiron|激論/,
         name: 'topic',
-        description: '激論しそうな話題を返します'
+        description: '激論しそうな話題を返します',
+        all: true
       )
 
       def topic(message)
