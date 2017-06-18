@@ -10,6 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["sfprhythnn@gmail.com"]
 
   spec.summary       = "Ruboty handler to generate conversation topic"
+  spec.homepage      = "https://github.com/rhythnn/ruboty-gekiron"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
