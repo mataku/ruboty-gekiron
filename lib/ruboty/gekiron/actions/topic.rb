@@ -14,7 +14,7 @@ module Ruboty
         private
 
         def topic
-          path = File.expand_path(ENV['TOPICS_YML'])
+          path = File.expand_path(ENV['TOPICS_YML'] || './config/topics.yml' )
           YAML.load_file(path).sample
         end
 
