@@ -8,7 +8,7 @@ module Ruboty
       )
 
       def topic(message)
-        Ruboty::Gekiron::Actions::Gekiron.new(message).call
+        Ruboty::Gekiron::Actions::Topic.new(message).call
       end
     end
   end

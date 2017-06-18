@@ -4,7 +4,7 @@ require 'nkf'
 module Ruboty
   module Gekiron
     module Actions
-      class Gekiron < Ruboty::Actions::Base
+      class Topic < Ruboty::Actions::Base
         def call
           message.reply(gekiron_topic)
         rescue => e
