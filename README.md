@@ -1,4 +1,4 @@
-# Ruboty::Gekiron
+# Ruboty::Gekiron (激論)
 
 Roboty handler to generate conversation topic.
 
