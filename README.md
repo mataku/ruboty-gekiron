@@ -40,5 +40,5 @@ Then, create topics yaml file `./config/topics.yml` in your bot code repository
 
 ## ENV
 ```
-TOPICS_YML  - Topics file path (default: ./config/topics.yml)
+TOPICS_YAML_FILE_PATH  - Topics file path (default: ./config/topics.yml)
 ```
