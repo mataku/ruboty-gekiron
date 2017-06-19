@@ -5,6 +5,12 @@ module Ruboty
         /topic|gekiron|激論/,
         name: 'topic',
         description: '激論しそうな話題を返します',
+      )
+
+      on(
+        /gekiron/,
+        name: 'topic',
+        description: '激論しそうな話題を返します',
         all: true
       )
 
