@@ -29,7 +29,7 @@ Then, create topics yaml file `./config/topics.yml` in your bot code repository 
 ```yaml
 # example
 - テンションが上がるもの
-- オシャレな言葉
+- 今流行っているもの
 - さらりと言えたらかっこいい言葉
 ```
 
@@ -37,10 +37,14 @@ Then, create topics yaml file `./config/topics.yml` in your bot code repository 
 
 ```
 @ruboty help
+/gekiron/ - 激論しそうな話題を返します
 ruboty /topic|gekiron|激論/ - 激論しそうな話題を返します
 
 @ruboty gekiron
 「ふ」から始まる、テンションが上がるものは？
+
+gekiron
+「な」から始まる、さらりと言えたらかっこいい言葉は？
 ```
 
 ## ENV
