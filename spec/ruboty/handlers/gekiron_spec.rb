@@ -26,28 +26,28 @@ describe Ruboty::Handlers::Gekiron do
   end
 
   describe '#call' do
-    context 'valid word with name prefix' do
+    context 'with valid keyword with name prefix' do
       let(:said) { '@ruboty gekiron' }
 
-      it 'returns conversation topic' do
+      it 'replies conversation topic' do
         expect(ruboty).to receive(:say).with(reply_data)
         ruboty.receive(body: said, from: from, to: to)
       end
     end
 
-    context 'valid word without name prefix' do
+    context 'with valid keyword without name prefix' do
       let(:said) { 'gekiron' }
       
-      it 'returns conversation topic' do
+      it 'replies conversation topic' do
         expect(ruboty).to receive(:say).with(reply_data)
         ruboty.receive(body: said, from: from, to: to)
       end
     end
 
-    context 'invalid word without name prefix' do
+    context 'with invalid keyword without name prefix' do
       let(:said) { '激論' }
 
-      it 'should not return conversation topic' do
+      it 'does not reply' do
         expect(ruboty).not_to receive(:say)
         ruboty.receive(body: said, from: from, to: to)
       end
